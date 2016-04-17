@@ -3,17 +3,15 @@ using System.Collections;
 
 public class ObjectRotation : MonoBehaviour {
 
-	// Use this for initialization
     Quaternion initialRotation;
     Quaternion externalRotation = Quaternion.Euler(0, 0, 0);
 
     
-	void Start() {
+	void Awake() {
         initialRotation = transform.rotation;
         Debug.Log("Quaternion" + externalRotation);
 	}
 	
-	// Update is called once per frame
 	void Update() {
         
 	}
